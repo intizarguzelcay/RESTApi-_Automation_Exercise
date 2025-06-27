@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "2a0ce143-6840-4327-9fe5-c40297627c5c",
+		"name": "swagger_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43391279",
+		"_collection_link": "https://galactic-star-6368804.postman.co/workspace/%C4%B0ntizar-G%C3%BCzel%C3%A7ay's-Workspace~abaa37db-98c1-4db9-85d6-a741df55ec04/collection/43391279-2a0ce143-6840-4327-9fe5-c40297627c5c?action=share&source=collection_link&creator=43391279"
+	},
+	"item": [
+		{
+			"name": "User Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 49,\n  \"username\": \"IntoPunto\",\n  \"firstName\": \"İntizar\",\n  \"lastName\": \"Güzelçay\",\n  \"email\": \"gzlcayintizar@gmai.com\",\n  \"password\": \"12345\",\n  \"phone\": \"05467865779\",\n  \"userStatus\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Get",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/%C4%B1ntopunto7",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"%C4%B1ntopunto7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/%C4%B1ntopunto",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"%C4%B1ntopunto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"username\": \"ıntopunto3\",\r\n  \"firstName\": \"intizar\",\r\n  \"lastName\": \"güzelçay\",\r\n  \"email\": \"gazlcay@gmail.com\",\r\n  \"password\": \"3435\",\r\n  \"phone\": \"132456789\",\r\n  \"userStatus\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/%C4%B1ntopunto2",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"%C4%B1ntopunto2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create User WithList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"id\": 123456,\r\n    \"username\": \"beyti\",\r\n    \"firstName\": \"John\",\r\n    \"lastName\": \"Meta\",\r\n    \"email\": \"barıs@gmail.com\",\r\n    \"password\": \"1234567\",\r\n    \"phone\": \"05677893445\",\r\n    \"userStatus\": 0\r\n  },\r\n{\r\n    \"id\": 56,\r\n    \"username\": \"barıss4\",\r\n    \"firstName\": \"ali\",\r\n    \"lastName\": \"veli\",\r\n    \"email\": \"aliveli@gmail.com\",\r\n    \"password\": \"567890\",\r\n    \"phone\": \"05677845676\",\r\n    \"userStatus\": 1\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/createWithList",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"createWithList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User WithArray",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}[\n  {\n    \"id\": 1234567,\n    \"username\": \"beyti\",\n    \"firstName\": \"johnny\"\n    \"lastName\": \"Meta\",\n    \"email\": \"barıs@gmail.com\",\n    \"password\": \"1234567\",\n    \"phone\": \"05677893445\",\n    \"userStatus\": 0\n  },\n{\n    \"id\": 5689,\n    \"username\": \"barıss44\",\n    \"firstName\": \"ali\",\n    \"lastName\": \"veli\",\n    \"email\": \"aliveli@gmail.com\",\n    \"password\": \"567890\",\n    \"phone\": \"05677845676\",\n    \"userStatus\": 1\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/createWithArray",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"createWithArray"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
